@@ -68,16 +68,15 @@ movie-recommendation-system/
 6. Return the top 5 most similar movies.
 
 ---
-
 ## 📸 Screenshots
 
 ### Home Page
 
-Add your homepage screenshot here.
+![Home Page](static/home.png)
 
 ### Recommendation Result
 
-Add your recommendation result screenshot here.
+![Recommendation Result](static/result1.png)
 
 ---
 
