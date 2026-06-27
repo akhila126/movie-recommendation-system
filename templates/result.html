@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendation Result</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🎬 Recommended Movies</h1>
+
+    <h3>Because you liked:</h3>
+
+    <p class="movie-name">
+        {{ movie_name }}
+    </p>
+
+    <h3>We recommend:</h3>
+
+    <ul class="recommendation-list">
+        {% for movie in recommendations %}
+            <li>{{ movie }}</li>
+        {% endfor %}
+    </ul>
+
+    <br>
+
+    <a href="/">⬅ Recommend Another Movie</a>
+
+</div>
+
+</body>
+</html>
